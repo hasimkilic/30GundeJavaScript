@@ -1,2 +1,2 @@
-Bu seri 30 Days Of JavaScript challegena katıldığım için
-aldığım notları öğrendiğim kodları burada tutuyorum.
+Bu seri 30 Days Of JavaScript challegenda
+aldığım notları kendi yorumlarımla burada tutuyorum.
