@@ -1,0 +1,1 @@
+Bu dosyada dom konusunu daha detaylı bir şekilde not tuttum.
