@@ -1,1 +1,1 @@
-Bu dosyada dom konusunu daha detaylı bir şekilde not tuttum.
+Bu dosyada Dom ve Events konularını daha detaylı bir şekilde çalışarak kendi yorumlarımla bu dosyada tuttum.
