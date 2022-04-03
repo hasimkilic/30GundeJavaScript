@@ -1,0 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bi-arrow-left,
+.bi-arrow-right {
+    cursor: pointer;
+    margin: 0 15px;
+}
