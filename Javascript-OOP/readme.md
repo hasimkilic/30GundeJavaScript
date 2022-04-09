@@ -9,4 +9,4 @@
 
 *********
 
-####<i>Error Handling</i> dosyasında <b>try ,catch ve finally</b> komutlarını kendi yorumlarınla detaylı bir şekilde no aldım.En sonda uygulama ile kullanımını pekiştirdim.
+#### <i>Error Handling</i> dosyasında <b>try ,catch ve finally</b> komutlarını kendi yorumlarınla detaylı bir şekilde no aldım.En sonda uygulama ile kullanımını pekiştirdim.
