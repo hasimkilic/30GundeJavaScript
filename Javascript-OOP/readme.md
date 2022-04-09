@@ -8,3 +8,5 @@
 ##### <b>callback ,immediate fonksiyonları ,fonksiyondan fonksiyon geriye döndürme,getter ve setter (get ve set methodları),call(),apply(),bind() methodlarının kullanımı vce örnekle açıklanması.</b>
 
 *********
+
+####<i>Error Handling</i> dosyasında <b>try ,catch ve finally</b> komutlarını kendi yorumlarınla detaylı bir şekilde no aldım.En sonda uygulama ile kullanımını pekiştirdim.
