@@ -1,0 +1,1 @@
+#### Bu dosyada callback fonksiyonları, request istekleri ,api üzerinde çalışarak istediğimiz ülkenin verilerini getiren bir proje yaptım.

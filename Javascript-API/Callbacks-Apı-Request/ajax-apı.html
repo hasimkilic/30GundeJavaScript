@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Ajax</title>
+</head>
+<body>
+    <div class="container ">
+        <div class="row ">
+
+        </div>
+    </div>
+
+<script>
+//seçtiğimiz ülkelerin bilgisini getiren uygulama yazalım.
+function displayCountry(country){
+    const request = new XMLHttpRequest();
+// GET yazarsak getir almak talebinde bulunuruz. POST yazarsak bilgi kaydı yaparız.
+request.open('GET','https://restcountries.com/v2/name/' + country); //hangi işlemi yapmak istediğimiz open() komutu ile yapıyoruz.
+request.send();// bu şekilde istek atıyoruz.
+
+request.addEventListener('load',function(){
+    const data =JSON.parse(this.responseText); //veriyi bu şekilde  alırız.
+    // console.log(data)//veri burada yazar
+    console.log(typeof data)//string
+    //string to JSON.parse methodu ile string ifadeyi object türüne çeviririz.
+    const dt = data[0]
+    console.log(dt)
+    // console.log(dt.name)// bu şekilde ismini alırız.
+    // console.log(dt.capital)// başkent bilgisini alırız.
+    // console.log(dt.population)// nufüs bilgisini alırız.
+    setCountry(data[0]);
+    
+})
+}
+
+function setCountry(data){
+    const html = 
+    `
+    <div class="card mt-4" style="width: 18rem;">
+        <img src="${data.flags.png}" class="card-img-top" alt="flag"> 
+        <div class="card-body">
+          <h5 class="card-title">${data.nativeName}</h5>
+          <p class="card-text">İsimleri : <br> ${data.altSpellings}</p>
+          <p class="card-text">Nufüsu: ${(data.population/1000000).toFixed(1)}M </p>
+          <p class="card-text">Başkenti: ${data.capital}</p>
+          <a href="https://www.turkey.com" class="btn btn-primary" target="_blank">${data.name}</a>
+        </div>
+      </div>
+    `
+    document.querySelector('.container .row').insertAdjacentHTML('beforeend',html);//bu şekilde html içine aktardık.
+}
+
+displayCountry("turkey")
+displayCountry("france")
+displayCountry("italy")
+
+</script>
+
+
+
+</body>
+</html>
